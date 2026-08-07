@@ -1,0 +1,59 @@
+/* # --> div
+. --> class */
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+#div {
+    background-color: aqua;
+}
+
+#span {
+    background-color: yellow;
+}
+
+.section {
+    background-color: pink!important;
+    color: deepskyblue;
+    border: 2px dashed darkorchid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+input, select, textarea {
+    border: 3px solid brown;
+    background-color: lightsalmon;
+    color: aquamarine;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: lime;
+}
+
+#submit {
+    background-color: lightcoral;
+    border: none;
+    color:red;
+    width: 75px;
+    height: 40px;
+}
+
+#reset {
+    background-color: chartreuse;
+    border: none;
+    color: darkgreen;
+    padding: 10px;
+}
+
+a {
+    display: inline-block;
+    color: limegreen;
+    text-decoration: none;
+    transform: rotate(180deg);
+}

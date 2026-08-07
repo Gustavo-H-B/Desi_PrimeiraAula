@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
@@ -17,81 +18,116 @@
 
     <main>
         <!-- tags de textos -->
-        <h1>Títulos</h1>
-        <h2>Títulos</h2>
-        <h3>Títulos</h3>
-        <h4>Títulos</h4>
-        <h5>Títulos</h5>
-        <h6>Títulos</h6>
+        <section class="section">
+            <h1>Títulos</h1>
+            <h2>Títulos</h2>
+            <h3>Títulos</h3>
+            <h4>Títulos</h4>
+            <h5>Títulos</h5>
+            <h6>Títulos</h6>
 
-        <p>Hello, World!</p>
-        <p>Hello, <strong>World!</strong></p>
-        <p>Hello, <em>World!</em></p>
+            <p>Hello, World!</p>
+            <p>Hello, <strong>World!</strong></p>
+            <p>Hello, <em>World!</em></p>
 
-        <p>Hello, <br>World!</p>
+            <p>Hello, <br>World!</p>
+            <br>
+            <p>Hello,World!</p>
+            <hr>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <!-- Tags de listas -->
+            <h1>Tags de listas</h1>
+            <ol>
+                <li>Pedra Filosofal (1997)</li>
+                <li>Câmara Secreta (1998)</li>
+                <li>Prisioneiro de Azkaban (1999)</li>
+                <li>Cálice de Fogo (2000)</li>
+                <li>Ordem da Fênix (2003)</li>
+                <li>Enigma do Príncipe (2005)</li>
+                <li>Relíquias da Morte (2007)</li>
+            </ol>
+            <ul>
+                <li>Banana</li>
+                <li>Arroz</li>
+                <li>Aveia</li>
+                <li>kiwi</li>
+                <li>Pimentão</li>
+                <li>Lentilha</li>
+                <li>Chocolate</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <!-- Tag de Link -->
+            <h1>Tag de Link</h1>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+
+            <hr>
+
+            <!-- Tags de Mídia -->
+            <h1>Tags de Mídia</h1>
+            <img src="https://avatars.githubusercontent.com/u/207273816?v=4&size=500" alt="Sapo REX">
+            <img src="../assets/Sapo REX.png" alt="Sapo REX pequeno">
+
+            <br>
+
+            <video controls>
+                <source src="../assets/SapoAtumalaka.mp4" type="video/mp4">
+            </video>
+            <br>
+            <audio controls>
+                <source src="../assets/Café....mp4" type="audio/mpeg">
+            </audio>
+        </section>
+        <hr>
+        <section class="section">
+            <form>
+                <label for="nome">Nome: </label>
+                <input id="nome" type="text" placeholder="Escreva seu nome" required>
+                <br>
+                <label for="email">E-mail: </label>
+                <input id="email" type="email">
+                <br>
+                <label for="dataNacimento">Data de Nascimento: </label>
+                <input id="dataNascimento" type="date">
+                <br>
+                <label for="idade">Idade: </label>
+                <input id="idade" type="number">
+                <br>
+                <label for="senha">Senha</label>
+                <input id="senha" type="password">
+                <br>
+                <label for="genero">Gênero: </label>
+                <select id="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem"></textarea>
+                <br>
+                <button id="reset" type="reset">Limpar</button>
+                <button id="submit" type="submit">Enviar</button>
+            </form>
+        </section>
         <br>
-        <p>Hello,World!</p>
-        <hr>
-
-        <!-- Tags de listas -->
-        <h1>Tags de listas</h1>
-        <ol>
-            <li>Pedra Filosofal (1997)</li>
-            <li>Câmara Secreta (1998)</li>
-            <li>Prisioneiro de Azkaban (1999)</li>
-            <li>Cálice de Fogo (2000)</li>
-            <li>Ordem da Fênix (2003)</li>
-            <li>Enigma do Príncipe (2005)</li>
-            <li>Relíquias da Morte (2007)</li>
-        </ol>
-        <ul>
-            <li>Banana</li>
-            <li>Arroz</li>
-            <li>Aveia</li>
-            <li>kiwi</li>
-            <li>Pimentão</li>
-            <li>Lentilha</li>
-            <li>Chocolate</li>
-        </ul>
-        <hr>
-        <!-- Tag de Link -->
-        <h1>Tag de Link</h1>
-        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-        <hr>
-        <!-- Tags de Mídia -->
-        <h1>Tags de Mídia</h1>
-        <img src="https://avatars.githubusercontent.com/u/207273816?v=4&size=500" alt="Sapo REX">
-        <img src="../assets/Sapo REX.png" alt="Sapo REX pequeno">
+        <section class="section">
+            <div id="div">
+                Hello, World!
+            </div>
+            <br>
+            <span id="span">
+                Hello, World!
+            </span>
+        </section>
         <br>
-        
-        <video controls>
-            <source src="../assets/SapoAtumalaka.mp4" type="video/mp4">
-        </video>
-
-        <audio controls>
-            <source src = "../assets/Café....mp4" type="audio/mpeg">
-        </audio>
-
-        <hr>
-
-        <form>
-            <label for="nome">Nome: </label>
-            <input id="nome" type="text" placeholder="Escreva seu nome">
-            <br>
-            <label for="email">E-mail: </label>
-            <input id="email" type="email">
-            <br>
-            <label for="dataNacimento">Data de Nascimento: </label>
-            <input id="dataNascimento" type="date">
-            <br>
-            <label for="idade">Idade: </label>
-            <input id="idade" type="number">
-            <br>
-            <label for="senha">Senha</label>
-            <input id="senha" type="password">
-            <br>
-        </form>
-
     </main>
 
     <footer></footer>
